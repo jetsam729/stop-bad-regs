@@ -1,0 +1,1653 @@
+# Copyright (C) [729]jetsam
+# This file is distributed under the same license as the package.
+msgid ""
+msgstr ""
+"Project-Id-Version: stop-spammer-registrations\n"
+"Language-Team: [729]Jetsam\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-12-01 12:00+0300\n"
+"PO-Revision-Date: 2019-12-07 23:00+0300\n"
+"X-Generator: JetFAR\n"
+"Last-Translator: [729]Jetsam\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+msgid "Stop Spammers — Summary"
+msgstr ""
+
+msgid "Summary"
+msgstr ""
+
+# # ---- ss_options.php
+msgid "Stop Spammers — Protection Options"
+msgstr ""
+
+msgid "Protection Options"
+msgstr ""
+
+msgid "Only Use the Plugin for Standard WordPress Forms"
+msgstr ""
+
+msgid ""
+"Stop Spammers normally kicks off whenever someone fills out a form and "
+"presses submit.<br />This means it checks all the forms on a website, not "
+"just comments and logins.<br />This option will limit the plugin to wp-"
+"comments-post.php and wp-login.php.<br />WooCommerce and other plugins will "
+"not be checked.<br />Use this option if you are running an ecommerce site or "
+"a specialized site that has forms that are blocked by Stop Spammers.<br /"
+">For the most protection, this option is off by default (recommended)."
+msgstr ""
+
+msgid "Prevent Lockouts"
+msgstr ""
+
+msgid ""
+"This plugin aggressively checks for spammers and is unforgiving to the "
+"point<br />where even you may get locked out of your own website when you "
+"log off and try to log back in.<br />There are two options which help "
+"prevent this, but these options can make it easier for a spammer to hack "
+"your site.<br />When you are confident that the plugin is working you can "
+"uncheck these boxes."
+msgstr ""
+
+msgid "Automatically Add Admins to Allow List"
+msgstr ""
+
+msgid ""
+"Whenever an administrative user logs in, the IP address is added to the "
+"Allow List.<br />This means that you can't be locked out unless your IP "
+"address changes or you log in from a different location.<br />As soon as a "
+"login is successful then the IP is white-listed to prevent future problems."
+"<br />Disable this if you think that you will never be locked out."
+msgstr ""
+
+msgid "Check Credentials on All Login Attempts"
+msgstr ""
+
+msgid ""
+"Normally the plugin checks for spammers before WordPress can try to log in a "
+"user.<br />If you check this box, every attempt to log in will be tested for "
+"a valid user.<br />This may allow a hacker to guess your user ID and "
+"password by making thousands of attempts to login.<br />This is turned on "
+"initially to prevent you from being locked out of your own blog,<br />but "
+"should be unchecked after you verify that the plugin does not think you are "
+"a spammer."
+msgstr ""
+
+msgid "Validate Requests"
+msgstr ""
+
+msgid ""
+"Spam bots do not always follow rules. They don't provide the proper request "
+"headers or are too quick.<br />These items can be quickly checked. These "
+"rules are the most economical way of detecting spammers."
+msgstr ""
+
+msgid "Block Spam Missing the HTTP_ACCEPT Header"
+msgstr ""
+
+msgid "Block Invalid HTTP_REFERER"
+msgstr ""
+
+msgid ""
+"Blocks users who have a missing or incomplete HTTP_ACCEPT header. All "
+"browsers provide this header.<br />If a hit on your site is missing the "
+"HTTP_ACCEPT header it is because a poorly written bot is trying access your "
+"site."
+msgstr ""
+
+msgid ""
+"When you submit a form, all browsers provide the web page that submitted the "
+"form.<br />If this referring page is missing or does not match your website "
+"then the submission is probably from a program accessing your site.<br /"
+">Some phone apps try to log in without the correct header. You may want to "
+"disable this function<br />if you log into your website from your mobile "
+"device. Test it first - the better  written apps provide the referring page."
+msgstr ""
+
+msgid "Deny Disposable Email Addresses"
+msgstr ""
+
+msgid ""
+"Spammers who want to hide their true identities use disposable email "
+"addresses.<br />You can get these from a number of sites. The spammer "
+"doesn't have to register. He just picks up any mail anonymously.<br /"
+">Legitimate users use their real email address. It is very likely that "
+"anyone using a disposable email address is a spammer."
+msgstr ""
+
+msgid "Check for Long Emails, Author Name, or Password"
+msgstr ""
+
+msgid ""
+"Spammers can't resist using very long names and emails. This rejects these "
+"if they are over 64 characters in length."
+msgstr ""
+
+msgid "Check for Short Emails or Author Name"
+msgstr ""
+
+msgid ""
+"Spammers sometimes use blank usernames or author names.<br />If you are "
+"having trouble with a plugin or theme not using the correct fields with "
+"rejects for short usernames, then uncheck this box."
+msgstr ""
+
+msgid "Check for BBCodes"
+msgstr ""
+
+msgid ""
+"BBCodes are codes like [url] that spammers like to place in comments.<br /"
+">WordPress does not support BBCodes without a plugin.<br />If you have a "
+"BBCode plugin then disable this. This will mark any comment that has BBCodes "
+"as spam."
+msgstr ""
+
+msgid "Check for Quick Responses"
+msgstr ""
+
+msgid ""
+"<em>(disabled if caching is active)</em> The plugin will drop a cookie with "
+"the current time in it.<br />When the user enters a comment or tries to log "
+"into the system, the time is checked.<br />If the user responds too fast, he "
+"is a spammer. If cookies are not supported, this is disabled.<br />Use the "
+"timeout value below to control the speed (stops the most spammers of all the "
+"methods listed here)."
+msgstr ""
+
+msgid "Response Timeout Value"
+msgstr ""
+
+msgid ""
+"<br />This is the time used to determine if a spammer has filled out a form "
+"too quickly.<br />Humans take more than 10 seconds, at least, to fill out "
+"forms. The default is 4 seconds.<br />If a user takes 4 seconds or less to "
+"fill out a form they are not human and are denied.<br />Users who use "
+"automatic passwords may show up as false positives, so keep this low."
+msgstr ""
+
+msgid "Deny 404 Exploit Probing"
+msgstr ""
+
+msgid ""
+"Bots often search your site for exploitable files.<br />If there is a match "
+"to a known exploit URL,this will automatically add the IP address to the "
+"Deny List."
+msgstr ""
+
+msgid "Deny IPs Detected by Akismet"
+msgstr ""
+
+msgid ""
+"Akismet does a good job detecting spam. If Akismet catches a spammer, then "
+"the IP address should be added to the bad IP cache.<br />Akismet will "
+"continue to block comment spam, but if there is a login or registration "
+"attempt from the same IP, it will be blocked."
+msgstr ""
+
+msgid "Check for Exploits"
+msgstr ""
+
+msgid ""
+"This checks for the PHP eval() function and typical SQL injection strings in "
+"comments and login attempts.<br />It also checks for JavaScript that may "
+"potentially be used for cross domain exploits."
+msgstr ""
+
+msgid "Deny Login Attempts Using 'admin' in Username"
+msgstr ""
+
+msgid ""
+"When a spammer starts hitting the login page with 'admin' anywhere in the "
+"login ID<br />and there is no matching user, then it is a spammer trying to "
+"figure out your password.<br />Deny List immediately. This only works if you "
+"do not have any users with 'admin' in their username.<br />It is dangerous "
+"to have a username 'admin'. Sites get thousands of hits from bots trying to "
+"guess the admin password.<br />This has the side effect of preventing users "
+"from registering a username with the word admin in it.<br />Users cannot "
+"register with 'admin2' or 'superadmin' or 'Administrator.'"
+msgstr ""
+
+msgid "Check for Many Hits in a Short Time"
+msgstr ""
+
+msgid "Deny access when there are"
+msgstr ""
+
+msgid "comments or logins in less than"
+msgstr ""
+
+msgid "minutes"
+msgstr ""
+
+msgid ""
+"Spammers hit your site over and over again.<br />If you get more than %s hit"
+"(s) in %s minute(s), the spammer will be stopped,<br />added to the bad "
+"cache, and shown the challenge page."
+msgstr ""
+
+msgid "Filter Login Requests"
+msgstr ""
+
+msgid ""
+"Some plugins and themes bypass the standard registration forms.<br />If you "
+"check this, Stop Spammers will try to intercept the login in the WordPress "
+"user login module.<br />This will cause some overhead, but gives Stop "
+"Spammers another shot at detecting spam.<br />This is turned off by default "
+"because it could potentially be called at every page load."
+msgstr ""
+
+msgid "Check Against List of Ubiquity-Nobis and Other Spam Server IPs"
+msgstr ""
+
+msgid ""
+"A list of hosting companies who tolerate spammers.<br />They are the source "
+"of many comment spam and login attempts. This blocks many of them."
+msgstr ""
+
+msgid "Check for Major Hosting Companies and Cloud Services"
+msgstr ""
+
+msgid ""
+"Your users should come from ISPs only. If a request comes from a web host "
+"such as Softlayer, Rackspace, or Amazon AWS,<br />it is likely that the the "
+"user is a spammer who is running some spam software to attack your site."
+msgstr ""
+
+msgid "Check for Amazon Cloud"
+msgstr ""
+
+msgid ""
+"You can block comments and logins from Amazon Cloud Servers using this "
+"setting.<br >It may be that good services use Amazon Cloud servers so you "
+"may not want to use this.<br >Be careful about blocking Amazon. Sometimes "
+"you get spam from  one of their servers,<br >but they shut it down right "
+"away."
+msgstr ""
+
+msgid "Block Countries"
+msgstr ""
+
+# This does not block the whole country. It only blocks spam sources in a country.
+# # ----
+msgid "Allow Lists"
+msgstr ""
+
+msgid "Allow Options"
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
+msgid "Access Denied"
+msgstr ""
+
+msgid "Login Access Denied"
+msgstr ""
+
+msgid "Missing file"
+msgstr ""
+
+msgid "Options Updated"
+msgstr ""
+
+msgid ""
+"This feature is to be considered experimental. Use with caution and at your "
+"own risk."
+msgstr ""
+
+# # -- ss_allowlist_settings.php
+msgid "Stop Spammers — Allow Lists"
+msgstr ""
+
+msgid ""
+"These options will be checked first and will allow some users to continue "
+"without being checked further."
+msgstr ""
+
+msgid ""
+"You can prevent Google, PayPal, and other services from ever being blocked."
+msgstr ""
+
+msgid ""
+"Put IP addresses or emails here that you don't want blocked. One email or IP "
+"to a line. You can use wild cards here for emails."
+msgstr ""
+
+msgid ""
+"You may put user IDs here, but this is dangerous because spammers can easily "
+"find a user's ID from previous comments, and add comments using it.<br />I "
+"don't recommend using this. Normally user ID checking is turned off so you "
+"must check this box to use it."
+msgstr ""
+
+msgid "These are checked first so they override any blocking."
+msgstr ""
+
+msgid ""
+"<strong>DON'T TOUCH.</strong> Google is very important to most websites. "
+"This prevents Google from being blocked."
+msgstr ""
+
+msgid "Generated Allow List"
+msgstr ""
+
+msgid ""
+"An Allow List of well-behaved and responsible IP blocks in North America, "
+"Western Europe, and Australia.<br />These are a major source of spam, but "
+"also a major source of paying customers.<br />Checking this will let in some "
+"spam, but will not block residential ISP customers from industrialized "
+"countries."
+msgstr ""
+
+msgid "Other Allow Lists"
+msgstr ""
+
+msgid ""
+"A list of small web service providers that can be accidentally blocked as "
+"bad actors.<br />Currently on the list: VaultPress.<br />Request other "
+"services be added to this whitelist %s"
+msgstr ""
+
+msgid "Allow PayPal"
+msgstr ""
+
+msgid "If you accept payment through PayPal, keep this box checked."
+msgstr ""
+
+msgid "Allow Yahoo Merchant Services"
+msgstr ""
+
+msgid "If you use Yahoo Merchant Services, keep this box checked."
+msgstr ""
+
+msgid "Allow Amazon Cloud"
+msgstr ""
+
+msgid ""
+"The Amazon Cloud is the source of occasional spam, but they shut it down "
+"right away.<br />Lots of startup web services use Amazon Cloud Servers to "
+"host their services.<br />If you use a service to check your site, share on "
+"Facebook, or cross post from Twitter,<br />it may be using Amazon's cloud "
+"services. Check this if you want to always allow Amazon AWS."
+msgstr ""
+
+# # -- ss_denylist_settings.php --------------------------------------------------
+msgid "Stop Spammers — Block Lists"
+msgstr ""
+
+msgid "Block Lists"
+msgstr ""
+
+msgid "Block List"
+msgstr ""
+
+msgid ""
+"Put IP addresses or emails here that you want blocked. One email or IP to a "
+"line.<br />You can mix email addresses and IP numbers. You can use IPv4 or "
+"IPv6 numbers.<br />You can use CIDR format to  block a range (e.g. "
+"1.2.3.4/16)<br />or you can use wild cards (e.g. spammer@spam.* or 1.2.3.*)."
+"<br />You can also use this to deny user IDs.<br />This is usually not "
+"useful as spammers can change the user ID that they use.<br />To block "
+"usernames in this list, check this box."
+msgstr ""
+
+msgid ""
+"These are checked after the Allow List so the Allow List overrides any "
+"blocking."
+msgstr ""
+
+msgid "Spam Words List"
+msgstr ""
+
+msgid ""
+"Use the spam words list to check comment body, email, and author fields.<br /"
+">If a word here shows up in an email address or author field then block the "
+"comment (wild cards do not work here)"
+msgstr ""
+
+msgid "Check Spam Words"
+msgstr ""
+
+msgid "Add or delete spam words (one word per line)"
+msgstr ""
+
+msgid "Bad User Agents List"
+msgstr ""
+
+msgid "Check Agents"
+msgstr ""
+
+msgid ""
+"Browsers always include a user agent string when they access a site.<br />A "
+"missing user agent is usually a spammer using poorly written software or a "
+"leech who is stealing the pages from your site.<br />This option checks for "
+"a variety of user agents such as WGET and PHP, Java, or Ruby language "
+"standard agents.<br />It also checks for known abusive robots that sometimes "
+"submit forms."
+msgstr ""
+
+msgid "Add or delete agent strings (one word per line)"
+msgstr ""
+
+msgid ""
+"This is a string search so that all you have to enter is enough of the agent "
+"to match. Telesoft matches Telesoft Spider or Telesoft 3.2."
+msgstr ""
+
+msgid "Blocked TLDs"
+msgstr ""
+
+msgid ""
+"Enter the TLD name including the '.' e.g. .XXX<br /><strong>This only works "
+"for email addresses entered by the user.</strong><br />This will block all "
+"comments and registrations that use this TLD in domains for emails.<br />If "
+"you have a problem with a more complex sub-domains you can also use this to "
+"check anything after the first period.<br />This is not for stopping "
+"domains, though. Entering '.xxx.ru' will stop 'user@mail.xxx.ru',but it will "
+"not stop 'user@xxx.ru'.<br />Blocked TLDs (One TLD per line not case "
+"sensitive)"
+msgstr ""
+
+msgid ""
+"A TLD is the last part of a domain like .COM or .NET.<br />You can block "
+"emails from various countries this way by adding a TLD such as .CN or .RU "
+"(these will block Russia and China).<br />It will not block the whole "
+"country.<br />A list of TLDs can be found at <a href=\"https://wikipedia.org/"
+"wiki/List_of_Internet_top-level_domains\" target=\"_blank\">Wikipedia list "
+"of internet top-level domains</a>."
+msgstr ""
+
+# # -- ss_challenge.php ---------------------------------------------
+msgid "Stop Spammers — Challenge and Deny"
+msgstr ""
+
+msgid "Challenge &amp; Deny"
+msgstr ""
+
+msgid "Spammer Message"
+msgstr ""
+
+msgid ""
+"This message is only visible to spammers.<br />It only shows if spammers are "
+"rejected at the time the login or comment form is displayed.<br />You can "
+"use the shortcode <em>[reason]</em> to include the deny reason code with the "
+"message.<br />You can also use <em>[ip]</em> in your message which would be "
+"the user's IP address.<br />(You may not want to give spammers hints on how "
+"they were denied.)"
+msgstr ""
+
+msgid "Send Spammer to Another Web Page"
+msgstr ""
+
+msgid "Enable redirect"
+msgstr ""
+
+msgid ""
+"If you want you can send the spammer to a web page.<br />This can be a "
+"custom page explaining terms of service for example."
+msgstr ""
+
+msgid "Allow Users to Add to the Allow Request List"
+msgstr ""
+
+msgid ""
+"Users can see the form to add themselves to the request list, but lots of "
+"spammers fill it out randomly.<br />This hides the request form."
+msgstr ""
+
+msgid "Blocked users see the Allow Request form"
+msgstr ""
+
+msgid "Notify Webmaster When a User Requests to be Added to the Allow List"
+msgstr ""
+
+msgid ""
+"Blocked users can add their email addresses to the the Allow List request."
+"<br />This will also send you an email notification."
+msgstr ""
+
+msgid "Enable email request"
+msgstr ""
+
+msgid "(Optional) email where requests are sent"
+msgstr ""
+
+msgid "Second Chance CAPTCHA Challenge"
+msgstr ""
+
+msgid "No CAPTCHA (default)"
+msgstr ""
+
+msgid "Google reCAPTCHA"
+msgstr ""
+
+msgid "Solve Media CAPTCHA"
+msgstr ""
+
+msgid "Arithmetic Question"
+msgstr ""
+
+msgid ""
+"The plugin is extremely aggressive and will probably block some small number "
+"of legitimate users.<br />You can give users a second chance by displaying a "
+"CAPTCHA image and asking them to type in the letters that they see.<br /"
+">This prevents lockouts.<br />This option will override the email "
+"notification option above.<br />By default, the plugin will support the "
+"arithmetic question, which is okay.<br />For better results, use Google's "
+"reCAPTCHA, or you can try SolveMedia's CAPTCHA"
+msgstr ""
+
+msgid ""
+"In order to use Solve Media or Google reCAPTCHA you will need to get an API "
+"key.<br />Open CAPTCHA is no longer supported so the arithmetic question "
+"will be used for those that had it set."
+msgstr ""
+
+msgid "Google reCAPTCHA API Key"
+msgstr ""
+
+msgid "Site Key"
+msgstr ""
+
+msgid "Secret Key"
+msgstr ""
+
+msgid ""
+"These API keys are used for displaying a Google reCAPTCHA on your site.<br /"
+">You can display the reCAPTCHA in case a real user is blocked, so they can "
+"still leave a comment.<br />You can register and get an API key at %s.<br /"
+">If the keys are correct you should see the reCAPTCHA here"
+msgstr ""
+
+msgid ""
+"If the reCAPTCHA form looks good, you need to enable the reCAPTCHA on the "
+"Challenge &amp; Deny options page. (see left)"
+msgstr ""
+
+msgid "Solve Media CAPTCHA API Key"
+msgstr ""
+
+msgid "Solve Media Challenge Key"
+msgstr ""
+
+msgid "Solve Media Verification Key"
+msgstr ""
+
+msgid ""
+"This API key is used for displaying a Solve Media CAPTCHA on your site.<br /"
+">You can display the CAPTCHA in case a real user is blocked, so they can "
+"still leave a comment.<br />You can register and get an API key at %s .<br /"
+">If the keys are correct you should see the CAPTCHA here"
+msgstr ""
+
+# # ----------------------
+msgid "Stop Spammers — Allow Requests"
+msgstr ""
+
+msgid "Allow List Requests"
+msgstr ""
+
+msgid "Allow Requests"
+msgstr ""
+
+msgid "Requests Cleared"
+msgstr ""
+
+msgid "Clear the Requests"
+msgstr ""
+
+msgid ""
+"When users are blocked they can fill out a form asking to be added to the "
+"allow list.<br />Any users that have filled out the form will appear below."
+"<br />Some spam robots fill in any form that they find so their may be some "
+"garbage here."
+msgstr ""
+
+msgid "No requests."
+msgstr ""
+
+# # - ss_cache.php -------------------------------------------------
+msgid "Stop Spammers — Cache"
+msgstr ""
+
+msgid "Cache"
+msgstr ""
+
+msgid "Cache Clear"
+msgstr ""
+
+msgid "Cache Cleared"
+msgstr ""
+
+msgid ""
+"Whenever a user tries to leave a comment, register, or login, they are "
+"recorded in the Good Cache<br />if they pass or the Bad Cache if they fail. "
+"If a user is blocked from access, they are added to the Bad Cache.<br />You "
+"can see the caches here. The caches clear themselves over time,<br />but if "
+"you are getting lots of spam it is a good idea to clear these out manually "
+"by pressing the \"Clear Cache\" button."
+msgstr ""
+
+msgid ""
+"You can change the number of entries to keep in your history and cache.<br /"
+">The size of these items is an issue and will cause problems with some "
+"WordPress installations.<br />It is best to keep these small."
+msgstr ""
+
+msgid ""
+"Select the number of items to save in the bad IP cache.<br />Avoid making "
+"this too big as it can cause the plugin to run out of memory."
+msgstr ""
+
+msgid ""
+"The good cache should be set to just a few entries.<br />The first time a "
+"spammer hits your site he may not be well-known and once he gets in the Good "
+"Cache<br />he can hit your site without being checked again.<br />Increasing "
+"the size of the cache means a spammer has more opportunities to hit your "
+"site without a new check."
+msgstr ""
+
+msgid "Bad Cache Size"
+msgstr ""
+
+msgid "Bad IP Cache Size"
+msgstr ""
+
+msgid "Good IP Cache Size"
+msgstr ""
+
+msgid "Good Cache Size"
+msgstr ""
+
+msgid "Nothing in the cache."
+msgstr ""
+
+msgid "Cached Values"
+msgstr ""
+
+msgid "Rejected IPs"
+msgstr ""
+
+msgid "Good IPs"
+msgstr ""
+
+# # - ss_get_bcache.php, ss_get_gcache.php
+msgid "Look Up WHOIS"
+msgstr ""
+
+msgid "Delete %s from Cache"
+msgstr ""
+
+msgid "Add %s to Deny List"
+msgstr ""
+
+msgid "Add %s to Allow List"
+msgstr ""
+
+msgid "Search %s in StopForumSpam.com"
+msgstr ""
+
+# # - ss_reports.php -------------------------------------------------
+msgid "Log Report — Stop Spammers"
+msgstr ""
+
+msgid "Log Report"
+msgstr ""
+
+# # -- ss_diagnostics.php	------------------------------------------------------
+msgid "Stop Spammers — Diagnostics"
+msgstr ""
+
+msgid "Diagnostics"
+msgstr ""
+
+msgid "This allows you to test the plugin against an IP address."
+msgstr ""
+
+msgid "Option Testing"
+msgstr ""
+
+msgid "IP Address"
+msgstr ""
+
+msgid "Your server address is"
+msgstr ""
+
+msgid "Author/User"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Test Options"
+msgstr ""
+
+msgid "Test Countries"
+msgstr ""
+
+msgid "Memory used, peak: %s, %s"
+msgstr ""
+
+msgid "Allow Checks."
+msgstr ""
+
+msgid "Deny Checks"
+msgstr ""
+
+msgid "Add-on Checks"
+msgstr ""
+
+msgid "Display All Options"
+msgstr ""
+
+msgid "Dump Options"
+msgstr ""
+
+msgid "Dump Stats"
+msgstr ""
+
+msgid "You can dump all options here (useful for debugging)"
+msgstr ""
+
+msgid "Display All Stats"
+msgstr ""
+
+msgid "You can dump all stats here"
+msgstr ""
+
+msgid "Show PHP Info"
+msgstr ""
+
+msgid "Debug File deleted"
+msgstr ""
+
+msgid "Debug Output"
+msgstr ""
+
+msgid "end of file (if empty, there are no errors to display)"
+msgstr ""
+
+msgid "Show Debug File"
+msgstr ""
+
+msgid "Delete Debug File"
+msgstr ""
+
+# # -- ss_option_maint.php
+msgid "DB Cleanup"
+msgstr ""
+
+msgid "Stop Spammers — DB Cleanup"
+msgstr ""
+
+# # -- ss_threat_scan.php
+msgid "Stop Spammers — Threat Scan"
+msgstr ""
+
+msgid "Threat Scan"
+msgstr ""
+
+# # -- ss_summary.php
+msgid "Summary Cleared"
+msgstr ""
+
+msgid ""
+"Jetpack Protect has been detected. Stop Spammers has disabled itself.<br /"
+">Please turn off Jetpack Protect or uninstall Stop Spammers."
+msgstr ""
+
+msgid "Beta Options"
+msgstr ""
+
+msgid ""
+"Delete leftover options from deleted plugins or anything that appears "
+"suspicious."
+msgstr ""
+
+msgid "A simple scan to find possibly malicious code."
+msgstr ""
+
+msgid "Your current IP address is"
+msgstr ""
+
+msgid "This address is invalid for testing for the following reason"
+msgstr ""
+
+msgid "Stop Spammers in total has stopped %s spammers since %s."
+msgstr ""
+
+msgid "Stop Spammers has stopped %s spammers since %s."
+msgstr ""
+
+msgid "This is cheating! Enter a new Total Spam Count"
+msgstr ""
+
+msgid "Update Total Spam"
+msgstr ""
+
+msgid ""
+"<br />If you working on a local installation of WordPress, this might be OK."
+"<br />However, if the plugin reports that your IP is invalid it may be "
+"because you are using Cloudflare or a proxy server to access this page.<br /"
+">This will make it impossible for the plugin to check IP addresses.<br />You "
+"may want to go to the Stop Spammers Testing page in order to test all "
+"possible reasons<br />that your IP is not appearing as the IP of the machine "
+"that your using to browse this site.<br />It is possible to use the plugin "
+"if this problem appears, but most checking functions will be turned off.<br /"
+">The plugin will still perform spam checks which do not require an IP.<br /"
+">If the error says that this is a Cloudflare IP address, you can fix this by "
+"installing the Cloudflare plugin.<br />If you use Cloudflare to protect and "
+"speed up your site then you MUST install the Cloudflare plugin.<br />This "
+"plugin will be crippled until you install it."
+msgstr ""
+"<br />Если вы работаете с локальной установкой WordPress, это может быть "
+"нормально.<br />Eсли плагин сообщает, что ваш IP-адрес недействителен, это "
+"может быть связано с тем, что вы используете Cloudflare<br />(или wordpress "
+"работает под связкой frontend+backend, например nginx+apache)<br />или вы "
+"используете прокси-сервер для доступа к этой странице.<br />Это может "
+"сделать невозможным проверки IP-адресов.<br />Вы можете перейти на страницу "
+"«Stop Spammers Диагностика», чтобы проверить все возможные причины<br />по "
+"которым ваш IP-адрес не отображается в качестве IP-адреса компьютера, "
+"который Вы используете для просмотра этого сайта.<br />Можно будет "
+"использовать плагин, если эта проблема останется, но большинство функций "
+"проверки (по ip-адресам) будут отключены.<br />Плагин будет по-прежнему "
+"выполнять проверку на спам, который не требует проверки по IP-адресу.<br /"
+">Если ошибка из-за использования хостинга Cloudflare, это можно исправить, "
+"установив плагин Cloudflare.<br />Если Вы используете Cloudflare для защиты "
+"и ускорения своего сайта, Вы <strong>ДОЛЖНЫ</strong> установить плагин "
+"Cloudflare<br />иначе Stop Spammers будет выполнять проверки только частично."
+
+msgid "Summary of Spam"
+msgstr ""
+
+msgid "Clear Summary"
+msgstr ""
+
+msgid "Pass Good Cache"
+msgstr ""
+
+msgid "Reported by Akismet"
+msgstr ""
+
+msgid "Pass Scripts"
+msgstr ""
+
+msgid "Pass Uncheckable IP"
+msgstr ""
+
+msgid "Allow List Email"
+msgstr ""
+
+msgid "Allow User ID/Author"
+msgstr ""
+
+msgid "Pass Allow List IP"
+msgstr ""
+
+msgid "404 Exploit Attempt"
+msgstr ""
+
+msgid "Bad or Missing Accept Header"
+msgstr ""
+
+msgid "Admin Login Attempt"
+msgstr ""
+
+msgid "Passed Login OK"
+msgstr ""
+
+msgid "Bad or Missing User Agent"
+msgstr ""
+
+msgid "Bad Cache"
+msgstr ""
+
+msgid "Deny List Email"
+msgstr ""
+
+msgid "Deny User ID/Author"
+msgstr ""
+
+msgid "Deny List IP"
+msgstr ""
+
+msgid "BotScout"
+msgstr ""
+
+msgid "Disposable Email"
+msgstr ""
+
+msgid "DNSBL Hit"
+msgstr ""
+
+msgid "Exploit Attempt"
+msgstr ""
+
+msgid "Google Safe Browsing"
+msgstr ""
+
+msgid "Project Honeypot"
+msgstr ""
+
+msgid "Block Invalid IP"
+msgstr ""
+
+msgid "Long Email"
+msgstr ""
+
+msgid "Short Email"
+msgstr ""
+
+msgid "BBCode in Request"
+msgstr ""
+
+msgid "Bad HTTP_REFERER"
+msgstr ""
+
+msgid "Session Speed"
+msgstr ""
+
+msgid "Stop Forum Spam"
+msgstr ""
+
+msgid "Spam Words"
+msgstr ""
+
+msgid "Email TLD"
+msgstr ""
+
+msgid "Repeated Hits"
+msgstr ""
+
+msgid "Check for Standard Form"
+msgstr ""
+
+msgid "Passed CAPTCHA"
+msgstr ""
+
+msgid "Failed CAPTCHA"
+msgstr ""
+
+msgid "Total Pass"
+msgstr ""
+
+msgid "Amazon AWS"
+msgstr ""
+
+msgid "Amazon AWS Allow"
+msgstr ""
+
+msgid "Pass Cloudflare"
+msgstr ""
+
+msgid "Pass Google"
+msgstr ""
+
+msgid "Known Spam Host"
+msgstr ""
+
+msgid "Pass PayPal"
+msgstr ""
+
+msgid "Ubiquity Servers"
+msgstr ""
+
+msgid "Pass Yahoo merchant"
+msgstr ""
+
+msgid "Pass Allow List"
+msgstr ""
+
+msgid "Pass Generated Allow List"
+msgstr ""
+
+msgid "Get Support and Help Improve Stop Spammers"
+msgstr ""
+
+msgid "Free Support"
+msgstr ""
+
+msgid "Paid Support"
+msgstr ""
+
+msgid ""
+"If you need more advanced help securing your site or other web services,<br /"
+">and are interested in hiring me, please <a href=\"mailto:bhadaway@gmail.com"
+"\">email me</a>. — <em>Bryan</em>"
+msgstr ""
+
+msgid "Plugin Options"
+msgstr ""
+
+msgid ""
+"This checks to see if there may be problems from your current incoming IP "
+"address and displays a summary of events."
+msgstr ""
+
+msgid ""
+"This has all the options for checking for spam and logins. You can also "
+"block whole countries."
+msgstr ""
+
+msgid ""
+"Here you can set up your Allow List to allow IP addresses to log in and "
+"leave comments on your site, without being checked for spam. It also sets up "
+"the options which you can use to allow certain kinds of users into your "
+"site, even though they may trigger spam detection."
+msgstr ""
+
+msgid ""
+"This is where you set up your Deny List for IPs and emails. It also allows "
+"you to enter spam words and phrases that trigger spam."
+msgstr ""
+
+msgid ""
+"This sets up CAPTCHA and notification options. You can give users who "
+"trigger the plugin a second chance to use a CAPTCHA. Supports Google "
+"reCAPTCHA and Solve Media CAPTCHA."
+msgstr ""
+
+msgid ""
+"Displays users who were denied and filled out the form requesting access to "
+"your site."
+msgstr ""
+
+msgid ""
+"This is where you enter the API keys for StopForumSpam.com and other web "
+"checking services. You don't need to have these set for the plugin to work, "
+"but if you do, you will have better protection and the ability to report "
+"spam."
+msgstr ""
+
+msgid "Shows the cache of recently detected events."
+msgstr ""
+
+msgid "Shows details of the most recent events detected by Stop Spammers."
+msgstr ""
+
+msgid ""
+"You can use this to test an IP, email, or comment against all of the "
+"options. This can tell you more about why an IP address might fail. It will "
+"also show you any options that might crash the plugin on your site due to "
+"system settings."
+msgstr ""
+
+msgid ""
+"You are using the admin ID \"admin\". This is an invitation to hackers to "
+"try and guess your password. Please change this.<br />Here is discussion on "
+"WordPress.org"
+msgstr ""
+
+msgid ""
+"Cloudflare Remote IP address detected. Please install the %s.<br />This "
+"plugin works best with the Cloudflare plugin when yout website is using "
+"Cloudflare."
+msgstr ""
+
+msgid "Cloudflare Plugin"
+msgstr ""
+
+# ------------------ common -------------------------
+msgid "Count"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Time"
+msgstr ""
+
+msgid "IP"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Reason"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+# # ss_webservices_settings.php ----------------------------------------------------------------------
+msgid "Stop Spammers — Web Services"
+msgstr ""
+
+msgid "Web Services"
+msgstr ""
+
+msgid ""
+"There are many services that can be used to check for spam or protect your "
+"website against spammers.<br />Most require a key so that only registered "
+"users can use their services.<br />All of the services here can be used by "
+"Stop Spammers and all are free."
+msgstr ""
+
+msgid "StopForumSpam.com API Key"
+msgstr ""
+
+msgid "Enable Stop Forum Spam Lookups: %s Check to enable SFS lookups"
+msgstr ""
+
+msgid ""
+"You do not need an API key to check the Stop Forum Spam database, but if you "
+"want to report any spam that you find, you need to provide it here.<br />You "
+"can register and get an API key at %s."
+msgstr ""
+
+msgid ""
+"You can set the minimum settings to allow possible spammers to use your site."
+"<br />You may wish to forgive spammers with few incidents or no recent "
+"activity.<br />I would recommend that to be on the safe side, you should "
+"block users who appear on the spam database unless they specifically ask to "
+"be Allow Listed."
+msgstr ""
+
+msgid ""
+"Deny spammers found on Stop Forum Spam with more than %s incidents, and "
+"occurring less than %s days ago."
+msgstr ""
+
+msgid "Allowed values are 0 to 9999. Only numbers are accepted."
+msgstr ""
+
+msgid "Project Honeypot API Key"
+msgstr ""
+
+msgid ""
+"This API key is used for querying the Project Honeypot Deny List.<br />It is "
+"required if you want to check IP addresses against the Project Honeypot "
+"database.<br />You can register and get an API key at %s."
+msgstr ""
+
+msgid ""
+"Deny spammers found on Project HoneyPot with incidents less than %s days "
+"ago, and with more than %s threat level.<br />(25 threat level is average, "
+"threat level 5 is fairly low.)"
+msgstr ""
+
+msgid "BotScout API Key"
+msgstr ""
+
+msgid ""
+"This API key is used for querying the BotScout database.<br />It is required "
+"if you want to check IP addresses against the botscout.com database.<br /"
+">You can register and get an API key at %s."
+msgstr ""
+
+msgid ""
+"Please note that BotScout is disabled in this release because of policy "
+"changes at botscout.com."
+msgstr ""
+
+msgid "Deny spammers found on BotScout with more than %s incidents."
+msgstr ""
+
+msgid "Check Against DNSBL Lists Such as Spamhaus.org"
+msgstr ""
+
+msgid ""
+"Checks the IP on Spamhaus.org. This is primarily used for email spam, but "
+"the same bots sending out email spam are probably running comment spam and "
+"other exploits."
+msgstr ""
+
+msgid "Google Safe Browsing API Key"
+msgstr ""
+
+msgid "Sign up for a Google Safe Browsing API Key"
+msgstr ""
+
+msgid ""
+"If this API key is present, URLs found in comments will be checked for "
+"phishing or malware sites and if found, will be rejected."
+msgstr ""
+
+# # - ss_option_maint.php ------------------
+msgid ""
+"Plugins often don't clean up their mess when they are uninstalled. Some "
+"malicious themes and plugins use WordPress options to store some information."
+msgstr ""
+
+msgid ""
+"This function allows you inspect and delete orphan or suspicious options and "
+"to change plugin options so that they don't autoload."
+msgstr ""
+
+msgid ""
+"In WordPress, some options are loaded whenever WordPress loads a page. These "
+"are marked as autoload options. This is done to speed up WordPress and "
+"prevent the programs from hitting the database every time some plugin needs "
+"to look up an option. Automatic loading of options at startup makes "
+"WordPress fast, but it can also use up memory for options that will seldom "
+"or never be used."
+msgstr ""
+
+msgid ""
+"You can safely switch options so that they don't load automatically. "
+"Probably the worst thing that will happen is that the page will paint a "
+"little slower because the option is retrieved separately from other options. "
+"The best thing that can happen is there is a lower demand on memory because "
+"the unused options are not loaded when WordPress starts loading a page."
+msgstr ""
+
+msgid ""
+"When plugins are uninstalled they are supposed to clean up their options. "
+"Many plugins do not do any cleanup during uninstall. It is quite possible "
+"that you have many orphan options from plugins that you deleted long ago. "
+"These are autoloaded on every page, slowing down your pages and eating up "
+"memory. These options can be safely marked so that they will not autoload. "
+"If you are sure they are not needed you can delete them."
+msgstr ""
+
+msgid ""
+"The change autoload column shows current autoload state. Yes means it is "
+"autoloading. No means that it is not."
+msgstr ""
+
+msgid ""
+"You can change the autoload settings or delete an option on the form below. "
+"Be aware that you can break some plugins by deleting their options. I do not "
+"show most of the built-in options used by WordPress. The list below should "
+"be just plugin options."
+msgstr ""
+
+msgid ""
+"It is far safer to change the autoload option value to \"no\" than to delete "
+"an option. Only delete an option if you are sure that it is from an "
+"uninstalled plugin. If you find your pages slowing down, turn the autoload "
+"option back to \"yes\"."
+msgstr ""
+
+msgid ""
+"Option names are determined by the plugin author. Some are obvious, but some "
+"make no sense. You may have to do a little detective work to figure out "
+"where an option came from."
+msgstr ""
+
+msgid "contents of"
+msgstr ""
+
+msgid "changing %s autoload to %s"
+msgstr ""
+
+msgid "deleting %s"
+msgstr ""
+
+msgid "Option"
+msgstr ""
+
+msgid "Autoload"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Change Autoload"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "View Contents"
+msgstr ""
+
+msgid "Are you sure? There is not undo for this."
+msgstr ""
+
+msgid "view"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid ""
+"WordPress creates temporary objects in the database called transients.<br /"
+">WordPress is not good about cleaning them up afterwards.<br />You can clean "
+"these up safely and it might speed things up."
+msgstr ""
+
+msgid "Delete Transients"
+msgstr ""
+
+msgid "Currently there are %s found."
+msgstr ""
+
+# # -- ss_threat_scan.php ---------------------------------------------------------
+msgid ""
+"This is a very simple threat scan that looks for things out of place in the "
+"content directory as well as the database."
+msgstr ""
+
+msgid ""
+"The process searches PHP files for the occurrence of the eval() function, "
+"which, although a valuable part of PHP is also the door that hackers use in "
+"order to infect systems. The eval() function is avoided by many programmers "
+"unless there is a real need. It is often used by hackers to hide their "
+"malicious code or to inject future threats into infected systems. If you "
+"find a theme or a plugin that uses the eval() function it is safer to delete "
+"it and ask the author to provide a new version that does not use this "
+"function."
+msgstr ""
+
+msgid ""
+"The scan can take a few seconds and on larger or slower systems can time-out."
+msgstr ""
+
+msgid "Run Scan"
+msgstr ""
+
+msgid ""
+"When you scan your system you undoubtedly see the eval used in Javascript "
+"because it is used in the Javascript AJAX and JSON functionality. The "
+"appearance of eval in these cases does not mean that there is a possible "
+"threat. It just means that you should inspect the code to make sure that it "
+"is in a Javascript section and not native PHP."
+msgstr ""
+
+msgid ""
+"The process continues its scan by checking the database tables for "
+"Javascript or HTML where it should not be found."
+msgstr ""
+
+msgid ""
+"Normally, Javascript can be found in the post body, but if the script tag is "
+"found in a title or a text field where it does not belong it is probably "
+"because the script is hiding something, such as a hidden admin user, so that "
+"the normal administration pages do not show bad records. The scan looks for "
+"this and displays the table and record number where it believes there is "
+"something hinky."
+msgstr ""
+
+msgid ""
+"The scan continues looking in the database for certain HTML in places where "
+"it does not belong. Recent threats have been putting HTML into fields in the "
+"options table so that users will be sent to malicious sites. The presence of "
+"HTML in options values is suspect and should be checked."
+msgstr ""
+
+msgid ""
+"The options table will have things placed there by plugins so it is "
+"difficult to tell if scripts, iframes, and other HTML tags are a threat. "
+"They will be reported, but they should be checked before deleting the "
+"entries."
+msgstr ""
+
+msgid ""
+"This process is just a simple scan and does not try to fix any problems. It "
+"will show things that may not be threats, but should be checked. If anything "
+"shows up, you should try to repair the damage or hire someone to do it. I am "
+"not a security expert, but a programmer who discovered these types of things "
+"in a friend's blog. After many hours of checking I was able to fix the "
+"problem, but a professional could have done it faster and easier, although "
+"they would have charged for it."
+msgstr ""
+
+msgid ""
+"You probably do not have a backup to your blog, so if this scan shows you "
+"are clean, your next step is to install one of the plugins that does regular "
+"backups of your system. Next, make sure you have the latest WordPress "
+"version."
+msgstr ""
+
+msgid ""
+"If you think you have problems, the first thing to do is change your user ID "
+"and password. Next make a backup of the infected system. Any repairs to "
+"WordPress might delete important data so you might lose posts, and the "
+"backup will help you recover missing posts."
+msgstr ""
+
+msgid ""
+"The next step is to install the latest version of WordPress. The new "
+"versions usually have fixes for older threats."
+msgstr ""
+
+msgid ""
+"You may want to export your WordPress posts, make a new clean installation "
+"of WordPress, and then import the old posts."
+msgstr ""
+
+msgid "If this doesn't work it is time to get a pro involved."
+msgstr ""
+
+msgid ""
+"A clean scan does not mean you are safe. Please do backups and keep your "
+"installation up-to-date!"
+msgstr ""
+
+msgid "Testing Posts"
+msgstr ""
+
+msgid "Nothing found in posts."
+msgstr ""
+
+msgid "Testing Comments"
+msgstr ""
+
+msgid "Nothing found in comments."
+msgstr ""
+
+msgid "Testing Links"
+msgstr ""
+
+msgid "Testing Users"
+msgstr ""
+
+msgid "Nothing found in links."
+msgstr ""
+
+msgid "Nothing found in users."
+msgstr ""
+
+msgid "found possible problems in Users (%s) ID:%s"
+msgstr ""
+
+msgid "found possible problems in comment (%s) ID:%s"
+msgstr ""
+
+msgid "found possible problems in post (%s) ID:%s"
+msgstr ""
+
+msgid "found possible problems in links (%s) ID:%s"
+msgstr ""
+
+msgid "Testing Options Table for HTML"
+msgstr ""
+
+msgid "Nothing found in options."
+msgstr ""
+
+msgid "Found possible problems in Option %s (%s) option_id: %s value: %s"
+msgstr ""
+
+msgid "Scanning Themes and Plugins for eval"
+msgstr ""
+
+msgid "Possible Problems Found!"
+msgstr ""
+
+msgid "No Problems Found"
+msgstr ""
+
+msgid ""
+"These are warnings only. Some content and plugins might not be malicious, "
+"but still contain one or more of these indicators. Please investigate all "
+"indications of problems. The plugin may err on the side of caution."
+msgstr ""
+
+msgid ""
+"Although there are legitimate reasons for using the eval function, and "
+"Javascript uses it frequently, finding eval in PHP code is in the very least "
+"bad practice, and the worst is used to hide malicious code. If eval() comes "
+"up in a scan, try to get rid of it."
+msgstr ""
+
+msgid ""
+"Your code could contain 'eval', or 'document.write(unescape(' or 'try{window."
+"onload' or setAttribute('src'. These are markers for problems such as SQL "
+"injection or cross-browser Javascript. &lt;script&gt; tags should occur in "
+"your posts, if you added them, but should not be found anywhere else, except "
+"options. Options often have scripts for displaying Facebook, Twitter, etc. "
+"Be careful, though, if one appears in an option. Most of the time it is OK, "
+"but make sure."
+msgstr ""
+
+msgid "Files"
+msgstr ""
+
+# # ss_network.php ----------------------------------------
+msgid "Stop Spammers — Multisite"
+msgstr ""
+
+msgid "Network of Blogs"
+msgstr ""
+
+msgid ""
+"If you are running WPMU and want to control options and history through the "
+"main login admin panel, select ON. If you select OFF, each blog will have to "
+"configure the plugin separately, and each blog will have a separte history."
+msgstr ""
+
+msgid "Networked ON"
+msgstr ""
+
+msgid "Networked OFF"
+msgstr ""
+
+msgid "Network Blog Option"
+msgstr ""
+
+# # -- ss_reports.php ----------------------------------------
+msgid "Stop Spammers — Log Report"
+msgstr ""
+
+msgid "Activity Log Cleared"
+msgstr ""
+
+msgid "There are %s spam comments waiting for you to report them."
+msgstr ""
+
+msgid "There are %s comments waiting to be moderated."
+msgstr ""
+
+msgid "History Size"
+msgstr ""
+
+msgid "Select the number of items to save in the History. Keep this small."
+msgstr ""
+
+msgid "Update Log Size"
+msgstr ""
+
+msgid "Clear Activity"
+msgstr ""
+
+msgid "Clear Recent Activity"
+msgstr ""
+
+msgid "Nothing in logs."
+msgstr ""
+
+msgid "Date/Time"
+msgstr ""
+
+msgid "Author, User/Pwd"
+msgstr ""
+
+msgid "Script"
+msgstr ""
+
+msgid "Blog"
+msgstr ""
+
+# # ss-admin-options.php --------------------------------------------------
+# # js script
+msgid "Spam Reported"
+msgstr ""
+
+msgid "Spam Already Reported"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid ""
+"Stop Spammers has prevented <strong>%s</strong> spammers from registering or "
+"leaving comments."
+msgstr ""
+
+msgid ""
+"user(s) has been denied access and <a href=\"admin.php?page=ss_allowrequests"
+"\">requested</a> that you add them to the Allow List."
+msgstr ""
+
+msgid "Report to SFS"
+msgstr ""
+
+msgid "No Options Set"
+msgstr ""
+
+msgid "No Comment ID Found"
+msgstr ""
+
+msgid "No Comment Found for %s"
+msgstr ""
+
+msgid "Cannot Report Spam without API Key"
+msgstr ""
+
+msgid "Recent Duplicate Entry"
+msgstr ""
+
+msgid "Returning from AJAX"
+msgstr ""
+
+msgid "Not Enabled"
+msgstr ""
+
+msgid "Access to the Stop Forum Spam Database Shows Errors"
+msgstr ""
+
+msgid "Response Was"
+msgstr ""
+
+msgid "Access to the Stop Forum Spam Database is Not Working"
+msgstr ""
+
+msgid "Access to the Stop Forum Spam Database is Working"
+msgstr ""
+
+msgid "No Response from the Stop Forum Spam API Call"
+msgstr ""
+
+msgid "Function Not Found"
+msgstr ""
+
+msgid "Unrecognized function \"%s\""
+msgstr ""
+
+msgid "Something is missing \"%s\""
+msgstr ""
+
+# # -- stop-spam-utils.php --------------------------------------
+msgid "File Not Found"
+msgstr ""
+
+# ------------------ only into [729]jetsam fork StopSpamReg. -------------------------
+msgid "Mixed"
+msgstr ""
+
+msgid "Mixed utils"
+msgstr ""
+
+msgid "TEST STRING TRANSLATE"
+msgstr ""

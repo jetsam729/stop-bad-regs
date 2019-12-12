@@ -1,0 +1,131 @@
+/*	*****************************************************************************************************************
+	EN: new fork start here. if want old style - delete all below 
+	здесь начинается модификация [729]jetsam. Если хотите старый стиль 
+		- просто удалите все, что ниже
+	***************************************************************************************************************** 
+*/
+
+/*
+.ss-set-alt{
+	min-width:480px;
+	max-width:800px;
+}
+*/
+
+.ss-set-alt{
+	min-width:800px;
+	max-width:1200px;
+}
+
+.ss-set-alt legend>span{
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+
+.ss-set-alt fieldset{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+
+	box-shadow: 4px 1px 4px rgba(0,0,0,0.2);
+}
+.ss-set-alt .button-primary{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 4px 1px 4px rgba(0,0,0,0.4);
+}
+.ss-set-alt legend{
+	padding: 5px;
+	border: 0;
+}
+
+.ss-set-alt-reports{
+	min-width:640px;
+	max-width:1200px;
+}
+
+
+.reports-butt{
+  width: auto;
+  display: table;
+  table-layout: fixed;
+}
+
+.reports-b-empty{
+  display: table-cell;
+  vertical-align: top;
+  margin-left: 5px;
+  padding: 1px;
+  width: 10px;
+}
+
+
+.reports-b-ls{
+	
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px;
+  width: 200px;
+	text-align:center;
+}
+
+.reports-b-ls fieldset{
+	margin: 0px !important;
+	padding: 6px !important;
+	height: 180px;
+	border-top-style: none;
+	box-shadow: 4px 1px 4px rgba(0,0,0,0.4); 
+	border-top-style: none;
+}
+.reports-b-ls legend{
+	padding:3px;
+}
+
+.reports-b-ls p{
+	padding:0;
+	margin:0;
+	text-align:center;
+	align:center;
+}
+.reports-b-ls .button-primary{
+	margin-bottom:5px;
+}
+
+
+.ss-set-alt .mt5{margin-top:5px  !important;}
+.ss-set-alt .mb5{margin-bottom:10px  !important;}
+.ss-set-alt .w600{max-width:600px !important;}
+
+
+#MMDBINFO input{
+	max-width:90% !important;
+}
+
+#MMDBINFO .button-primary{
+	margin-right:10px;
+}
+
+.ss-cache-rowT{
+	width:45%; /* !important; */
+}
+.sfs-empty{
+	padding-top:4px;
+}
+
+.ss-set-alt .ss-cache-row{
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:4px;
+	padding-bottom:4px;
+	box-shadow: 4px 1px 4px rgba(0,0,0,0.4); 
+
+}
