@@ -12,6 +12,7 @@ class ss_get_bcache {
 
 		// img def
 		$img_tpl	= '<div class="iconset-sfs ico-%s"></div>';	// tpl for all img in line
+
 		$trash_img	= sprintf($img_tpl,'trash');
 		$whois_img	= sprintf($img_tpl,'web-whois');
 		$deny_img	= sprintf($img_tpl,'shield-minus');
@@ -55,7 +56,7 @@ class ss_get_bcache {
                         $show	.= '&nbsp;';
 
 			// add IP to Deny List 
-			if(!empty($options['blist']) && !in_array($ip,$options['blist'])){ //[jetsam]: ONLY NOT EXISTS IN BLIST!
+			if(isset($options['blist']) && !in_array($ip,$options['blist'])){ //[jetsam]: ONLY NOT EXISTS IN BLIST!
 				$alt_t	= sprintf(__('Add %s to Deny List',SFS_TXTDOMAIN),$key);
 				$show	.= sprintf('<a href="" onclick="%s" title="%s" alt="%s">%s</a>'
 			           	, "sfs_ajax_process('$ip','$container','add_black','$ajaxurl');return false;"	//onClick
@@ -66,9 +67,8 @@ class ss_get_bcache {
                 	        $show	.= '&nbsp;';
 			}
 
-
 			// add IP to Allow List
-			if(!empty($options['wlist']) && !in_array($ip,$options['wlist'])){ //[jetsam]: ONLY NOT EXISTS IN WLIST!
+			if(isset($options['wlist']) && !in_array($ip,$options['wlist'])){ //[jetsam]: ONLY NOT EXISTS IN WLIST!
 				$alt_t	= sprintf(__('Add %s to Allow List',SFS_TXTDOMAIN),$key);
 				$show	.= sprintf('<a href="" onclick="%s" title="%s" alt="%s">%s</a>'
 			           	, "sfs_	ajax_process('$ip','$container','add_white','$ajaxurl');return false;"	//onClick

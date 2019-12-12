@@ -54,7 +54,7 @@ class ss_get_gcache {
                         $show	.= '&nbsp;';
 
 
-			if(!empty($options['blist']) && !in_array($ip,$options['blist'])){ //[jetsam]: ONLY NOT EXISTS IN BLIST!
+			if(isset($options['blist']) && !in_array($ip,$options['blist'])){ //[jetsam]: ONLY NOT EXISTS IN BLIST!
 				// add IP to Deny List 
 				$alt_t	= sprintf(__('Add %s to Deny List',SFS_TXTDOMAIN),$key);
 				$show	.= sprintf('<a href="" onclick="%s" title="%s" alt="%s">%s</a>'
@@ -66,7 +66,7 @@ class ss_get_gcache {
                 	        $show	.= '&nbsp;';
 			}
 
-			if(!empty($options['wlist']) && !in_array($ip,$options['wlist'])){ //[jetsam]: ONLY NOT EXISTS IN WLIST!
+			if(isset($options['wlist']) && !in_array($ip,$options['wlist'])){ //[jetsam]: ONLY NOT EXISTS IN WLIST!
 				// add IP to Allow List
 				$alt_t	= sprintf(__('Add %s to Allow List',SFS_TXTDOMAIN),$key);
 				$show	.= sprintf('<a href="" onclick="%s" title="%s" alt="%s">%s</a>'
