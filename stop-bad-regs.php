@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Stop BAD Regs/Access
-Plugin URI: 
+Plugin URI: https://github.com/jetsam729/stop-bad-regs
 Description: 
 Version: 1.0.1.b
 License: https://www.gnu.org/licenses/gpl.html
