@@ -2,7 +2,8 @@
 /*
  * Andrew Elisov (aka [729]jetsam)
  * обертка над (wrap of) MaxMind\Db\Reader.php 
- * v.2019.12.01
+ * 2019.12.01
+ * v1
 */
 
 if(!class_exists('\\MaxMind\\Db\\Reader')){	//
@@ -33,21 +34,21 @@ class GeoipLite2{
 	public	$db_dir			= '';
 
 	private	$db			= [
-					GeoipLite2::_G2_TYPE_COUNTRY	=>GeoipLite2::GEOIP2DB_FNAME_ASN,
-					GeoipLite2::_G2_TYPE_CITY	=>GeoipLite2::GEOIP2DB_FNAME_CITY,
-					GeoipLite2::_G2_TYPE_ASN	=>GeoipLite2::GEOIP2DB_FNAME_COUNTRY,
+					self::_G2_TYPE_COUNTRY	=>GeoipLite2::GEOIP2DB_FNAME_ASN,
+					self::_G2_TYPE_CITY	=>GeoipLite2::GEOIP2DB_FNAME_CITY,
+					self::_G2_TYPE_ASN	=>GeoipLite2::GEOIP2DB_FNAME_COUNTRY,
 					];
 
 	private	$readers		= [
-					GeoipLite2::_G2_TYPE_COUNTRY	=>null,
-					GeoipLite2::_G2_TYPE_CITY	=>null,
-					GeoipLite2::_G2_TYPE_ASN	=>null,
+					self::_G2_TYPE_COUNTRY	=>null,
+					self::_G2_TYPE_CITY	=>null,
+					self::_G2_TYPE_ASN	=>null,
 					];
 
 	private	$cache			= [
-					GeoipLite2::_G2_TYPE_COUNTRY	=>[],
-					GeoipLite2::_G2_TYPE_CITY	=>[],
-					GeoipLite2::_G2_TYPE_ASN	=>[],
+					self::_G2_TYPE_COUNTRY	=>[],
+					self::_G2_TYPE_CITY	=>[],
+					self::_G2_TYPE_ASN	=>[],
 					];
 
 	/**
